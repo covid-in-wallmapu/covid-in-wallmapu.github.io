@@ -1,9 +1,20 @@
+
+:root {
+  --serif: 'Alegreya', Georgia, Times New Roman, serif;
+  --sans-serif: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  --standard-text: #232323;
+  --accent: #27AAE1;
+}
+
 #map-key {
 	 margin-top: 2em;
 	 margin-bottom:2em;
 	 border-collapse: separate;
      border-spacing: 1.2em;
 	 font-size: 1.2em;
+	 font-family: var(--serif);
+	 font-weight: 800;
+	 color: var(--standard-text)
 }
 
 .key-symbol {
@@ -21,13 +32,13 @@
 
 .sidebar-info {
 	margin-right:1em;
-	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-family: var(--serif);
 	line-height: 150%;
 	font-size: 1.2em;
 }
 
 .sidebar-info a {
-	color: #0074d9;
+	color: var(--accent)
 }
 
 .sidebar-list {
@@ -38,11 +49,18 @@
 
 .sidebar-subheader {
 	margin-bottom:0;
-	font-weight:900;
+	font-weight:800;
 	font-style: italic;
 }
 
 
 .emphasis {
-	font-weight: 900;
+	font-weight: 800;
+}
+
+.lorem {
+    font-family: var(--sans-serif);
+	font-size: 16px;
+	font-style: italic;
+    color: #AAA;
 }

@@ -1,6 +1,18 @@
 
+:root {
+  --serif: 'Alegreya', Georgia, Times New Roman, serif;
+  --sans-serif: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  --standard-text: #232323;
+  --accent: #27AAE1;
+}
+        html, body, #map {
+            height: 100%;
+            font-size: 14px;
+			font-family: var(--sans-serif);
+		}
+
         #map {
-            background-color: #ffffff
+            background-color: #ffffff;
         }
         th {
             text-align: left;
@@ -8,7 +20,7 @@
         }
         .info {
             padding: 6px 8px;
-            font: 14px/16px Arial, Helvetica, sans-serif;
+			font-size: 14px/16px;
             background: white;
             background: rgba(255,255,255,0.8);
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -47,25 +59,7 @@
             border-radius: 0px !important;
             color: #000000 !important;
         }
-        .abstract {
-            font: bold 18px 'Lucida Console', Monaco, monospace;
-            text-indent: 1px;
-            background-color: #f8f8f8 !important;
-            width: 30px !important;
-            color: #000000 !important;
-            height: 30px !important;
-            text-align: center !important;
-            line-height: 30px !important;
-        }
-        .abstractUncollapsed {
-            padding: 6px 8px;
-            font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-            background-color:#f8f8f8 !important;
-            color: #000000 !important;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 5px;
-            max-width: 40%;
-        }
+
         .leaflet-touch .leaflet-control-layers,
         .leaflet-touch .leaflet-bar,
         .leaflet-control-search,
