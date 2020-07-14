@@ -15,10 +15,12 @@
 .banner {
 	display: table-cell;
 	vertical-align: middle;
+	padding: 10px;
 }
 
 .banner a {
 	font-family: var(--sans-serif);
 	color: var(--standard-text);
 	font-size: 14pt;
+	font-weight: 800;
 }
